@@ -1,0 +1,14 @@
+local StarterGui = game:GetService("StarterGui") 
+local bindable = Instance.new("BindableFunction")
+
+function bindable.OnInvoke(response)
+   loadstring(game:HttpGet(("https://raw.githubusercontent.com/rogerthehhh/RGTXVv0.1/main/RGTTTXXXX"),true))()
+end
+
+StarterGui:SetCore("SendNotification", { ----(/DONT CHANGE)-----
+    Title = "(Click load)",
+    Text = "Welcome to RGT X!",
+    Duration = 100,
+    Callback = bindable,
+    Button1 = "Load",
+})
